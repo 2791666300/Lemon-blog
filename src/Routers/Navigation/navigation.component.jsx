@@ -4,6 +4,9 @@ import { ReactComponent as BlackPageIcon } from "../../Assets/black-pagelogo.svg
 import { ReactComponent as WhitePageIcon } from "../../Assets/white-pagelogo.svg";
 import { ReactComponent as SearchIcon } from "../../Assets/search.svg";
 import ContainerTow from "../../Container/ContainerTwo/containerTwo.component";
+import NavBartoggle from "../../Components/NavBarToggle/navbartoggle.component";
+import Catalogue from "../../Components/Catalogue/catalogue.component";
+
 import {
 	NavigationContainer,
 	LogoContainer,
@@ -13,11 +16,29 @@ import {
 	NavLinkIcon,
 	BrightnessPageButton,
 	SearchButton,
+	ToggleCatalogue,
 } from "./navigation.style";
 
 const Navigation = () => {
 	const [click, setClick] = useState(false);
 	const [currentnavigate, setCurrentnavigate] = useState("");
+	const [isInHome, setIsInHome] = useState(false);
+	const [toggle, setToggle] = useState(false);
+
+	// 获取当前屏幕尺寸
+	const [windowSize, setWindowSize] = useState({
+		width: window.innerWidth,
+		height: window.innerHeight,
+	});
+	useEffect(() => {
+		const updateSize = () =>
+			setWindowSize({
+				width: window.innerWidth,
+				height: window.innerHeight,
+			});
+		window.addEventListener("resize", updateSize);
+		return () => window.removeEventListener("resize", updateSize);
+	}, []);
 
 	const clikcHandler = () => {
 		setClick(!click);
@@ -38,10 +59,20 @@ const Navigation = () => {
 				setCurrentnavigate(navi.child);
 			}
 		});
+
+		if (localtion.pathname === "/navi") {
+			setIsInHome(true);
+		} else {
+			setIsInHome(false);
+		}
 	}, [localtion.pathname]);
 
 	const navigateHandler = (e) => {
 		setCurrentnavigate(e.target.innerText);
+	};
+
+	const toggleHandler = () => {
+		setToggle(!toggle);
 	};
 
 	return (
@@ -84,6 +115,18 @@ const Navigation = () => {
 						<BrightnessPageButton onClick={clikcHandler} click={click}>
 							{click ? <WhitePageIcon /> : <BlackPageIcon />}
 						</BrightnessPageButton>
+
+						{isInHome && windowSize.width < 1000 && (
+							<BrightnessPageButton onClick={toggleHandler}>
+								<NavBartoggle color='white' />
+							</BrightnessPageButton>
+						)}
+
+						{toggle && (
+							<ToggleCatalogue>
+								<Catalogue />
+							</ToggleCatalogue>
+						)}
 
 						<NavLink to='/search'>
 							<SearchButton>

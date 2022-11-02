@@ -109,6 +109,7 @@ export const BrightnessPageButton = styled.button`
 	cursor: pointer;
 	border: none;
 	border-radius: 50%;
+
 	background-color: inherit;
 	margin: 0 0.5rem;
 	&:hover {
@@ -184,4 +185,13 @@ export const SearchButton = styled.button`
 	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
 		display: none;
 	}
+`;
+
+export const ToggleCatalogue = styled.div`
+	background-color: ${Colors.color_black_2};
+	height: 90vh;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 10vh;
 `;
