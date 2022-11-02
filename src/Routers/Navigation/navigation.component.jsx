@@ -27,6 +27,8 @@ const Navigation = () => {
 		{ to: "/navi/articles", child: "文章" },
 		{ to: "/navi/friendship", child: "链接" },
 		{ to: "/navi/more", child: "更多" },
+		{ to: "/navi/aboutblog", child: "Blog" },
+		{ to: "/navi/aboutme", child: "Me" },
 	];
 
 	const localtion = useLocation();

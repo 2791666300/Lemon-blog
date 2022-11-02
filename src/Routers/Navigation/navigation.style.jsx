@@ -40,7 +40,7 @@ export const NavLinks = styled.div`
 	justify-content: flex-end;
 	margin-right: 1rem;
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: ${Breakpoint.bp_large}) {
 		width: 80%;
 		margin-right: 0.4rem;
 	}
@@ -48,18 +48,22 @@ export const NavLinks = styled.div`
 
 export const NavLink = styled(Link)`
 	transition: all 0.3s;
-	padding: 1.6rem;
+	padding: 1.5rem;
 	color: white;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	cursor: pointer;
 	&:hover {
 		color: ${Colors.color_green_1};
 	}
-	@media only screen and (max-width: ${Breakpoint.bp_large}) {
-		font-size: 1.2rem;
-		padding: 0.5rem;
+	@media only screen and (max-width: ${Breakpoint.bp_largest}) {
+		font-size: 1.4rem;
+		padding: 1rem;
+	}
+	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
+		font-size: 1rem;
+		padding: 0.3rem;
 	}
 `;
 

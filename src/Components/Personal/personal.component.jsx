@@ -18,8 +18,8 @@ const Personal = () => {
 					这个世界充满未知的东西，就像我们永远都不会知道宇宙的全部面貌，但有什么能比循序渐进的过程更让人热血澎湃呢！
 				</Text>
 				<PersonalBtn>
-					<TextButton>关于我 &rarr;</TextButton>
-					<TextButton>关于博客 &rarr;</TextButton>
+					<TextButton goto='/navi/aboutme'>关于我 &rarr;</TextButton>
+					<TextButton goto='/navi/aboutblog'>关于博客 &rarr;</TextButton>
 				</PersonalBtn>
 				<Summary />
 			</PersonalList>
