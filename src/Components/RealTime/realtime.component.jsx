@@ -1,0 +1,23 @@
+import { RealTimeContainer } from "./realtime.style";
+
+const RealTime = ({ date }) => {
+	let hour = date.getHours();
+	let minute = date.getMinutes();
+	let second = date.getSeconds();
+	if (hour < 10) {
+		hour = "0" + hour;
+	}
+	if (minute < 10) {
+		minute = "0" + minute;
+	}
+	if (second < 10) {
+		second = "0" + second;
+	}
+	return (
+		<RealTimeContainer>
+			{hour}:{minute}:{second}
+		</RealTimeContainer>
+	);
+};
+
+export default RealTime;
