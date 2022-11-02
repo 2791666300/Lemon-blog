@@ -184,4 +184,8 @@ export const SearchButton = styled.button`
 		font-size: 2.5rem;
 		text-align: right;
 	}
+
+	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
+		display: none;
+	}
 `;
