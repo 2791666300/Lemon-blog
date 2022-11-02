@@ -44,6 +44,10 @@ export const NavLinks = styled.div`
 		width: 80%;
 		margin-right: 0.4rem;
 	}
+	@media screen and (max-width: ${Breakpoint.bp_phone}) {
+		width: 80%;
+		margin-right: 0rem;
+	}
 `;
 
 export const NavLink = styled(Link)`
@@ -64,6 +68,10 @@ export const NavLink = styled(Link)`
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		font-size: 1rem;
 		padding: 0.3rem;
+	}
+	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
+		font-size: 1rem;
+		padding: 0rem;
 	}
 `;
 
