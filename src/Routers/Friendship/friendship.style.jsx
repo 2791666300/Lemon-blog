@@ -14,13 +14,13 @@ export const FriendShipContainer = styled.div`
 `;
 
 export const FriendShipContent = styled.div`
-	height: 50rem;
+	height: 100%;
 	width: 60rem;
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		width: 50rem;
 	}
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 `;

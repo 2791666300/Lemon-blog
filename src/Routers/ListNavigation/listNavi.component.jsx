@@ -26,23 +26,18 @@ const ListNavigation = () => {
 						</ListNavigationLink>
 					</ListNavigationItem>
 					<ListNavigationItem>
-						<ListNavigationLink href='#'>
+						<ListNavigationLink href='/aboutme'>
 							<span>02</span>关于我
 						</ListNavigationLink>
 					</ListNavigationItem>
 					<ListNavigationItem>
-						<ListNavigationLink href='#'>
+						<ListNavigationLink href='/aboutbolg'>
 							<span>03</span>关于博客
-						</ListNavigationLink>
-					</ListNavigationItem>
-					<ListNavigationItem>
-						<ListNavigationLink href='/home'>
-							<span>04</span>开始阅读
 						</ListNavigationLink>
 					</ListNavigationItem>
 					<ListNavigationItem onClick={goToIndexHandler}>
 						<ListNavigationLink href='/'>
-							<span>05</span>回到首页
+							<span>04</span>回到首页
 						</ListNavigationLink>
 					</ListNavigationItem>
 				</ListNavigationList>

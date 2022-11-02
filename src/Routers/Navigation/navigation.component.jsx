@@ -72,9 +72,9 @@ const Navigation = () => {
 							);
 						})}
 
-						<BrightnessPageButton >
+						<BrightnessPageButton>
 							<NavLinkIcon
-								href='https://github.com/2791666300'
+								href='https://github.com/2791666300/Lemon-blog'
 								target='blank'
 							/>
 						</BrightnessPageButton>
