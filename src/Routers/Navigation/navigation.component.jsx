@@ -122,7 +122,7 @@ const Navigation = () => {
 							</BrightnessPageButton>
 						)}
 
-						{toggle && windowSize.width < 1000 && (
+						{toggle && windowSize.width < 1000 && isInHome && (
 							<ToggleCatalogue onClick={toggleHandler}>
 								<Catalogue />
 							</ToggleCatalogue>
