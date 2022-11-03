@@ -46,7 +46,7 @@ export const NavLinks = styled.div`
 	}
 	@media screen and (max-width: ${Breakpoint.bp_phone}) {
 		width: 80%;
-		margin-right: 0。2rem;
+		margin-right: 0.1rem;
 	}
 `;
 
@@ -63,11 +63,11 @@ export const NavLink = styled(Link)`
 	}
 	@media only screen and (max-width: ${Breakpoint.bp_largest}) {
 		font-size: 1.4rem;
-		padding: 1rem;
+		padding: 0.5rem;
 	}
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		font-size: 1rem;
-		padding: 0.3rem;
+		padding: 0.15rem;
 	}
 `;
 
@@ -97,8 +97,8 @@ export const NavLinkIcon = styled.a`
 		height: 3rem;
 		width: 3rem;
 		@media only screen and (max-width: ${Breakpoint.bp_medium}) {
-			width: 2rem;
-			height: 2rem;
+			width: 1.5rem;
+			height: 1.5rem;
 		}
 	}
 `;
@@ -116,8 +116,9 @@ export const BrightnessPageButton = styled.button`
 		background-color: #444950;
 	}
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
-		width: 3rem;
-		height: 3rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: 0 0.1rem;
 	}
 	display: flex;
 	justify-content: center;
@@ -136,13 +137,14 @@ export const SearchButton = styled.button`
 	height: 3.5rem;
 	padding: 0 1rem;
 	cursor: pointer;
-	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
+	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		width: 8rem;
 		p,
 		div {
 			display: none;
 		}
 	}
+
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -171,7 +173,7 @@ export const SearchButton = styled.button`
 	}
 	span {
 		color: ${Colors.color_white_text_2};
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 		font-weight: 600;
 		padding-left: 0.5rem;
 	}
@@ -180,10 +182,6 @@ export const SearchButton = styled.button`
 		flex: 1;
 		font-size: 2.5rem;
 		text-align: right;
-	}
-
-	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
-		display: none;
 	}
 `;
 
