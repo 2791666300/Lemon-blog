@@ -21,7 +21,7 @@ export const FriendShipLinksItem = styled.a`
 	font-weight: 700;
 	color: white;
 	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
-		padding: 1rem;
+		padding: 2rem .5rem;
 		height: 40%;
 	}
 
