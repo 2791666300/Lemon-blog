@@ -138,7 +138,7 @@ export const SearchButton = styled.button`
 	padding: 0 1rem;
 	cursor: pointer;
 	@media only screen and (max-width: ${Breakpoint.bp_small}) {
-		width: 4rem
+		width: 4rem;
 		p,
 		div {
 			display: none;
