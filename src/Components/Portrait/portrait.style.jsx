@@ -52,5 +52,4 @@ export const PortraitCaption = styled.figcaption`
 	transition: all .6s;
 	// 隐藏背面能见度
 	backface-visibility: hidden;
-	
 `;

@@ -2,8 +2,10 @@ import styled from "styled-components";
 import Colors from "../../constants/Colors";
 import Breakpoint from "../../constants/Breakpoint";
 export const ListNavigationContainer = styled.div`
+	
 	height: 100%;
 	width: 100%;
+	background-color: ${Colors.color_primary};
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -20,8 +22,8 @@ export const ListNavigationLink = styled.a`
 	&:visited {
 		display: inline-block;
 		font-size: 3rem;
-        font-weight: 500;
-        padding: 1rem 2rem;
+		font-weight: 500;
+		padding: 1rem 2rem;
 
 		@media only screen and (max-width: ${Breakpoint.bp_large}) {
 			font-size: 2rem;

@@ -72,3 +72,10 @@ export const SidebarBtn = styled.button`
 	}
 `;
 
+export const ListNaviContainer = styled.div`
+	height: 100vh;
+	width: 100vw;
+
+	position: absolute;
+	z-index: 100;
+`;
