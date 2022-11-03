@@ -52,7 +52,7 @@ const Categories = () => {
 				<Title titleType={TITLE_TYPE_CLASSES.secondary}>标签</Title>
 				<Label>
 					{labels.map((item) => {
-						return <LabelItem>&larr; {item}</LabelItem>;
+						return <LabelItem>{item}</LabelItem>;
 					})}
 				</Label>
 			</LabelContainer>

@@ -96,6 +96,9 @@ export const LabelItem = styled.a`
 	margin-right: 5px;
 	position: relative;
 	cursor: pointer;
+	@media only screen and (max-width: ${Breakpoint.bp_small}) {
+		font-size: 1rem;
+	}
 
 	&::after {
 		position: absolute;
