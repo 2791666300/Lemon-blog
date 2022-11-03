@@ -27,13 +27,13 @@ export const SidebarBtnContainer = styled.div`
 		transform: translate(-1rem, -1rem);
 	}
 	&:hover > * {
-		background-color: ${Colors.color_primary_2};
+		background-color: rgba(255,255,255, .6);
 	}
 	&:hover > *::before {
-		background-color: ${Colors.color_primary_2};
+		background-color: rgba(255,255,255, .6);
 	}
 	&:hover > *::after {
-		background-color: ${Colors.color_primary_2};
+		background-color: rgba(255,255,255, .6);
 	}
 `;
 export const SidebarBtn = styled.button`
