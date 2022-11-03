@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Breakpoint from "../../constants/Breakpoint";
 export const InputForm = styled.input`
 	font-size: 1.8rem;
 	font-weight: 400;
@@ -13,5 +13,9 @@ export const InputForm = styled.input`
 	border-radius: 2rem;
 	&::placeholder {
 		color: rgba(255, 255, 255, 0.5);
+	}
+
+	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
+		width: 20rem;
 	}
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Breakpoint from "../../constants/Breakpoint";
 export const FriendShipLinksContainer = styled.div`
 	height: 25rem;
 	width: 100%;
@@ -19,6 +20,10 @@ export const FriendShipLinksItem = styled.a`
 	font-size: 1.5rem;
 	font-weight: 700;
 	color: white;
+	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
+		padding: 1rem;
+		height: 40%;
+	}
 
 	img {
 		width: 100%;

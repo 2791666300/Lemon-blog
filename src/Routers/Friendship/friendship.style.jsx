@@ -19,6 +19,9 @@ export const FriendShipContent = styled.div`
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		width: 50rem;
 	}
+	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
+		width: 30rem;
+	}
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
