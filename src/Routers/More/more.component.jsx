@@ -3,7 +3,7 @@ import { MoreContainer } from "./more.style";
 const More = () => {
 	return (
 		<MoreContainer>
-			<h1>待更新哈🤣😁</h1>
+			<h1>持续更新中......</h1>
 		</MoreContainer>
 	);
 };

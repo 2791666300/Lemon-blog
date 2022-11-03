@@ -4,7 +4,7 @@ import Breakpoint from "../../constants/Breakpoint";
 export const FriendShipContainer = styled.div`
 	grid-row: 2 / -2;
 	grid-column: 1 / -1;
-	background: url("/img/bgimg-2.jpg");
+	background: url("/img/bgimg-1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
