@@ -18,9 +18,16 @@ export const LogoContainer = styled(Link)`
 	width: 6rem;
 	height: 100%;
 	margin-left: 5rem;
+	display: flex;
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: ${Breakpoint.bp_medium}) {
 		margin-left: 2rem;
+	}
+	@media screen and (max-width: ${Breakpoint.bp_small}) {
+		width: 3rem;
+		height: 70%;
+		margin-left: 1rem;
+		margin-top: 1rem;
 	}
 	img {
 		width: 100%;

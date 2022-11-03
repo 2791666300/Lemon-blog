@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
 			rgba(16, 29, 44, 0.9),
 			rgba(16, 29, 44, 0.8)
 		),
-		url("/img/hero.jpeg");
+		url("/img/hero-2.png");
 
 	background-size: cover;
 	background-position: center;
