@@ -137,10 +137,13 @@ export const SearchButton = styled.button`
 	height: 3.5rem;
 	padding: 0 1rem;
 	cursor: pointer;
-	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
-		width: 8rem;
+	@media only screen and (max-width: ${Breakpoint.bp_small}) {
+		width: 4rem;
 		p,
 		div {
+			display: none;
+		}
+		span {
 			display: none;
 		}
 	}
