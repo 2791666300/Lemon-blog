@@ -123,7 +123,7 @@ const Navigation = () => {
 						)}
 
 						{toggle && windowSize.width < 1000 && (
-							<ToggleCatalogue>
+							<ToggleCatalogue onClick={toggleHandler}>
 								<Catalogue />
 							</ToggleCatalogue>
 						)}

@@ -79,7 +79,7 @@ export const AuthContainer = styled.div`
 		height: 100%;
 		overflow: hidden;
 		transition: transform 0.6s ease-in-out;
-		z-index: 100;
+		z-index: 50;
 	}
 
 	.overlay {

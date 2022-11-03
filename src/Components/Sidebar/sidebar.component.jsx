@@ -21,19 +21,17 @@ const Sidebar = () => {
 
 	return (
 		<Fragment>
-			{/* <SidebarContainer>
-				<SidebarBtnContainer onClick={goToNavi}>
-					<SidebarBtn onClick={toggleHandler} />
-				</SidebarBtnContainer>
-			</SidebarContainer> */}
-			
 			<SidebarContainer>
 				<SidebarBtnContainer onClick={toggleHandler}>
 					<SidebarBtn />
 				</SidebarBtnContainer>
 			</SidebarContainer>
 
-			<ListNaviContainer>{toggle && <ListNavigation />}</ListNaviContainer>
+			{toggle && (
+				<ListNaviContainer>
+					<ListNavigation />
+				</ListNaviContainer>
+			)}
 		</Fragment>
 	);
 };
