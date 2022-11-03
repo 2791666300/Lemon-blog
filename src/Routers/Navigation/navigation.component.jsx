@@ -6,6 +6,9 @@ import { ReactComponent as SearchIcon } from "../../Assets/search.svg";
 import ContainerTow from "../../Container/ContainerTwo/containerTwo.component";
 import NavBartoggle from "../../Components/NavBarToggle/navbartoggle.component";
 import Catalogue from "../../Components/Catalogue/catalogue.component";
+import Button, {
+	BUTTON_TYPE_CLASSES,
+} from "../../Components/Button/button-component";
 
 import {
 	NavigationContainer,
@@ -17,6 +20,8 @@ import {
 	BrightnessPageButton,
 	SearchButton,
 	ToggleCatalogue,
+	SearchContainer,
+	SearchBox,
 } from "./navigation.style";
 
 const Navigation = () => {
@@ -24,6 +29,7 @@ const Navigation = () => {
 	const [currentnavigate, setCurrentnavigate] = useState("");
 	const [isInHome, setIsInHome] = useState(false);
 	const [toggle, setToggle] = useState(false);
+	const [serach, setSearch] = useState(false);
 
 	// 获取当前屏幕尺寸
 	const [windowSize, setWindowSize] = useState({
@@ -73,6 +79,9 @@ const Navigation = () => {
 
 	const toggleHandler = () => {
 		setToggle(!toggle);
+	};
+	const searchHandler = () => {
+		setSearch(!serach);
 	};
 
 	return (
@@ -128,8 +137,8 @@ const Navigation = () => {
 							</ToggleCatalogue>
 						)}
 
-						<NavLink to='/search'>
-							<SearchButton>
+						<NavLink>
+							<SearchButton onClick={searchHandler}>
 								<SearchIcon />
 								<span>搜索</span>
 								<div>🤪</div>
@@ -140,6 +149,24 @@ const Navigation = () => {
 				</NavigationContainer>
 				<Outlet />
 			</ContainerTow>
+			{serach && (
+				<SearchContainer>
+					<SearchBox>
+						<input type='search' placeholder='输入并搜索.....' />
+						<span>这里什么都没有~</span>
+						<div>
+							<Button
+								onClick={searchHandler}
+								buttonType={BUTTON_TYPE_CLASSES.actionbase}>
+								取消 &rarr;
+							</Button>
+							<Button buttonType={BUTTON_TYPE_CLASSES.actionbase}>
+								搜索 &rarr;
+							</Button>
+						</div>
+					</SearchBox>
+				</SearchContainer>
+			)}
 		</Fragment>
 	);
 };

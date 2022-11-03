@@ -136,7 +136,7 @@ export const SearchButton = styled.button`
 	height: 3.5rem;
 	padding: 0 1rem;
 	cursor: pointer;
-	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
+	@media only screen and (max-width: ${Breakpoint.bp_phone}) {
 		width: 8rem;
 		p,
 		div {
@@ -194,4 +194,59 @@ export const ToggleCatalogue = styled.div`
 	position: absolute;
 	right: 0;
 	top: 10vh;
+`;
+
+export const SearchContainer = styled.div`
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(16, 29, 43, 0.5);
+	z-index: 300;
+	display: flex;
+	justify-content: center;
+	padding-top: 10vh;
+`;
+
+export const SearchBox = styled.div`
+	height: 20rem;
+	width: 55rem;
+	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
+		width: 40rem;
+	}
+	background-color: ${Colors.color_black_2};
+	box-shadow: 0rem 0rem 2rem black;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	input {
+		height: 5rem;
+		width: 90%;
+		margin: 1rem;
+		padding: 0rem;
+		border-radius: 0.5rem;
+		outline: 2px solid ${Colors.color_green_1};
+		border: none;
+		background-color: black;
+		color: white;
+		font-size: 2rem;
+	}
+
+	span {
+		height: 10rem;
+		color: white;
+		line-height: 10rem;
+	}
+
+	div {
+		height: 5rem;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		box-shadow: 0rem 0rem 2rem black;
+		border-radius: 0.5rem;
+	}
 `;

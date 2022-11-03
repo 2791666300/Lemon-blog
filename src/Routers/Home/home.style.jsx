@@ -5,7 +5,7 @@ export const UpContainer = styled.span`
 	height: 50px;
 	width: 50px;
 	font-size: 5rem;
-z-index: 10000;
+	z-index: 200;
 	background-color: #444950;
 	border-radius: 50%;
 	border: none;

@@ -58,7 +58,7 @@ export const InvertedButton = styled(BaseButton)`
 export const ActionBaseButton = styled.button`
 	width: 100px;
 	border: none;
-	color: #eb2f64;
+	color: ${Colors.color_green_1};
 	font-size: 1.5rem;
 	border-bottom: 1px solid currentColor;
 	padding: 2px;
