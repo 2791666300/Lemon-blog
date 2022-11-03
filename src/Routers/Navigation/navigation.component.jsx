@@ -52,6 +52,7 @@ const Navigation = () => {
 	const navis = [
 		{ to: "/navi", child: "Home" },
 		{ to: "/navi/articles", child: "文章" },
+		{ to: "/navi/categories", child: "分类/标签" },
 		{ to: "/navi/friendship", child: "链接" },
 		{ to: "/navi/more", child: "更多" },
 		{ to: "/navi/aboutblog", child: "Blog" },

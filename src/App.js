@@ -7,11 +7,12 @@ import Auth from './Routers/Auth.js/auth.component';
 import ListNavigation from './Routers/ListNavigation/listNavi.component';
 import Navigation from './Routers/Navigation/navigation.component';
 import Home from './Routers/Home/home.component';
+import Categories from './Routers/Categories/categories.component';
+import Articles from './Routers/Articles/articles.component';
 import Friendship from './Routers/Friendship/friendship.component';
 import AboutMe from './Routers/AboutMe/aboutMe.component';
 import AboutBlog from './Routers/AboutBlog/aboutBolg.component';
 import More from './Routers/More/more.component';
-import Articles from './Routers/Articles/articles.component';
 import { GlobalStyle } from './globalStyles'
 
 
@@ -27,11 +28,12 @@ function App() {
         <Route path='/auth' element={<Auth />} />
         <Route path='/navi/*' element={<Navigation />} >
           <Route index element={<Home />} />
+          <Route path='articles' element={<Articles />} />
+          <Route path='categories' element={<Categories />} />
           <Route path='friendship' element={<Friendship />} />
           <Route path='aboutme' element={<AboutMe />} />
           <Route path='aboutblog' element={<AboutBlog />} />
           <Route path='more' element={<More />} />
-          <Route path='articles' element={<Articles />} />
         </Route>
       </Routes>
     </Fragment>

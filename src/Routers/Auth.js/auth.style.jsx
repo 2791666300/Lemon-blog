@@ -75,6 +75,7 @@ export const AuthContainer = styled.div`
 		position: absolute;
 		top: 0;
 		left: 50%;
+		
 		width: 50%;
 		height: 100%;
 		overflow: hidden;
