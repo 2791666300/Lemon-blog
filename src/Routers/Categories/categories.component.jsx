@@ -1,7 +1,3 @@
-import Title, {
-	TITLE_TYPE_CLASSES,
-} from "../../Components/Title/title.component";
-
 import {
 	CategoriesContainer,
 	ClassificationContainer,
@@ -36,7 +32,7 @@ const Categories = () => {
 	return (
 		<CategoriesContainer>
 			<ClassificationContainer>
-				<Title titleType={TITLE_TYPE_CLASSES.secondary}>分类</Title>
+				<h1>分类</h1>
 				<Classification>
 					{classifications.map((item) => {
 						return (
@@ -49,7 +45,7 @@ const Categories = () => {
 				</Classification>
 			</ClassificationContainer>
 			<LabelContainer>
-				<Title titleType={TITLE_TYPE_CLASSES.secondary}>标签</Title>
+				<h1>标签</h1>
 				<Label>
 					{labels.map((item) => {
 						return <LabelItem>{item}</LabelItem>;

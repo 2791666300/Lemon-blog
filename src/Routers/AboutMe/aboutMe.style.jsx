@@ -31,7 +31,7 @@ export const ResumeContinaer = styled.div`
 	}
 	h1 {
 		text-align: center;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 	}
 
 	h3 {

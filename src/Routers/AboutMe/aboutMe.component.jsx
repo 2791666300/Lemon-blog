@@ -4,7 +4,7 @@ const AboutMe = () => {
 		<AboutMeContainer>
 			<ResumeContinaer>
 				<h1>我的简历</h1>
-				<h4>持续更新……</h4>
+				{/* <h4>持续更新……</h4> */}
 				<ResumeItem>
 					<h2>个人信息</h2>
 					<p>

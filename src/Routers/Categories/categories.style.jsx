@@ -5,10 +5,11 @@ import Breakpoint from "../../constants/Breakpoint";
 export const CategoriesContainer = styled.div`
 	grid-row: 2 / -2;
 	grid-column: 1 / -1;
-	background: url("/img/bgimg-2.jpg");
+	background: url("/img/hero-2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: left;
+
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		background-position: top;
 	}
@@ -16,19 +17,33 @@ export const CategoriesContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	h1 {
+		height: 3.5rem;
+
+		color: ${Colors.color_green_1};
+		font-weight: 900;
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+
+		&:hover {
+			border-bottom: 2px solid ${Colors.color_green_1};
+		}
+		cursor: pointer;
+	}
 `;
 
 export const ClassificationContainer = styled.div`
 	height: 50%;
 	width: 100%;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.05);
 `;
 export const Classification = styled.div`
-	height: 50%;
+	height: 55%;
 	width: 40%;
 	@media only screen and (max-width: ${Breakpoint.bp_medium}) {
 		width: 90%;
@@ -65,12 +80,13 @@ export const ClassificationItem = styled.a`
 `;
 
 export const LabelContainer = styled.div`
-	height: 50%;
+	height: 55%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
 `;
 
 export const Label = styled.div`
